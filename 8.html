@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        function f(arr) {
+            let flag = true;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] <= 0) {
+                    flag = !flag;
+                    break;
+                }
+            }
+            if (flag) {
+                console.log('数组中所有数字都大于0');
+            } else {
+                console.log('NO!!!!')
+            }
+        }
+        f(arr1);
+    </script>
+</body>
+
+</html>
