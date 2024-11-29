@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        function f1(arr) {
+            for (let i = 0; i < arr1.length; i++) {
+                arr[i] === 0 ? delete arr[i] : '';
+            }
+
+            return arr;
+        }
+        // console.log(f1(arr1));
+
+        function f2(arr) {
+            for (let i = 0; i < arr1.length; i++) {
+                arr[i] === 0 ? arr.splice(i, 1) : '';
+            }
+            return arr;
+        }
+        // console.log(f2(arr1));
+        function f3(arr) {
+            let newArr = [];
+            for (let i = 0; i < arr1.length; i++) {
+                arr[i] !== 0 ? newArr.push(arr[i]) : '';
+            }
+            return newArr;
+        }
+        console.log(f3(arr1));
+
+    </script>
+</body>
+
+</html>
