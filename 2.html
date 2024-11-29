@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [2, 6, 1, 77, 52, 25, 7], max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            max = arr[i] > max ? arr[i] : max;
+        }
+        console.log(max);
+
+        function getMax(arr1) {
+            let arrMax = arr1[0];
+            for (let i = 1; i < arr1.length; i++) {
+                arrMax = Math.max(arrMax, arr1[i]);
+            }
+            return arrMax;
+        }
+        console.log(getMax(arr));
+    </script>
+</body>
+
+</html>
